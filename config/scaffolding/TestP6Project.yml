@@ -13,7 +13,16 @@ packages:
   gitUrl: https://github.com/rlakshitha0912
   gitUsername: rlakshitha0912
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
 services:
+- serviceName: project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:acct1
+  packages:
+  - name: TestP6Project
+    version: "1.0"
+  - name: TestAdapaterPackage
+    version: "1.0"
 - serviceName: project.testp6.integrations:test
   packages:
   - name: TestP6Project
@@ -28,3 +37,49 @@ services:
   packages:
   - name: TestAdapaterPackage
     version: "1.0"
+configurationVariables:
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.password
+  : "{AES}er+I3U8nDVm8F4DBRST1+A=="
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.keyStore
+  : ""
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.trustStore
+  : ""
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.dbType
+  : MySQL
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.databaseName
+  : db1000
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.serverName
+  : mysql.local
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.driverType
+  : mysql
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionEnabled: "false"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.TestP6Project.project.testp6.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.acct1.connectionSettings.user
+  : root
