@@ -8,4 +8,8 @@
 <INVOKE NAME="Date" SERVICE="pub.date:getCurrentDate">
   <COMMENT></COMMENT>
 </INVOKE>
+
+<INVOKE NAME="TestAdapaterPackage" SERVICE="service:date">
+  <COMMENT></COMMENT>
+</INVOKE>
 </FLOW>
